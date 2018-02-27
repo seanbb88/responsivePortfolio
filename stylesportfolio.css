@@ -1,0 +1,132 @@
+body {
+  background-color: white;  
+ 
+}
+
+.container {
+  border: black solid 1px; 
+  height: 400px;
+  width: 100%; 
+  background-image: url(space.jpg); 
+  background-size: 100%; 
+  margin: auto; 
+  background-repeat: repeat;
+  display: flex; 
+  flex-direction: column; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+   
+}
+
+
+.program {
+  border: solid black 1px; 
+  width: 40%; 
+  height: 80px; 
+  text-align: left; 
+  background-color: white; 
+  line-height: 1.5; 
+  font-size: 50px;
+  position: relative; 
+  margin: auto; 
+  border-radius: 25px; 
+  position: relative;  
+}
+
+
+#program {
+  width: 30%; 
+  height: 100%;
+  float: right;
+ 
+}
+
+.title {
+  text-align: center; 
+  font-size: 45px; 
+  border: black solid 1px; 
+  width: 100%; 
+  background:dimgray; 
+  margin-bottom: 20px; 
+  margin: auto; 
+}
+
+a {
+  text-decoration: none; 
+  color: black; 
+  margin-left: 3%; 
+  font-size: 100%; 
+}
+
+.footer {
+  text-align: center; 
+  font-size: 13px;
+  height: 45px;
+  border: black solid 1px; 
+  width: 100%; 
+  background:dimgray; 
+  margin-bottom: 20px; 
+  margin: auto; 
+  color: white; 
+  line-height: 45px; 
+}
+  
+
+
+@media screen and (max-width: 980px){
+
+  .program {
+    width: 30%; 
+    height: 60px;
+    line-height: 43px; 
+   
+
+  }
+
+  a {
+    font-size: 55%; 
+  }
+
+  .container {
+    width: 80%; 
+    height: 350px;
+  }
+
+  .title {
+    width: 80%; 
+  }
+
+  .footer {
+    width: 80%; 
+  }
+} 
+
+@media screen and (max-width: 768px){
+
+  .program {
+    width: 25%;
+    height: 40px; 
+    line-height: 17px; 
+    
+  }
+
+  .container{
+    display: flex; 
+    flex-direction: row; 
+    flex-shrink: initial; 
+  }
+
+  a {
+    font-size: 30%; 
+    
+  }
+
+}
+
+@media screen and (max-width: 640px){
+
+  h1 {
+    position: static;
+  }
+
+}

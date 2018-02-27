@@ -1,0 +1,67 @@
+.container {
+    flex-direction: column; 
+    display: flex; 
+    
+}
+
+body {
+  background-image: url("../Responsive-Portfolio/dust_scratches.png");
+  
+}
+
+
+h1 {
+  font-family: cursive; 
+  font-size: 30px; 
+  text-align: center; 
+  color: dimgray; 
+}
+
+#fullname {
+  width: 40%; 
+}
+
+#emailaddress {
+  width: 40%; 
+}
+
+#yourmessage {
+  width: 60%; 
+  height: 100px; 
+  
+
+}
+
+#fullname {
+  height: 15px;
+}
+
+#emailaddress {
+  height: 15px;
+}
+
+@media screen and (max-width: 640px){
+
+  #fullname {
+    width: 30%; 
+  }
+  #emailaddress{
+    width: 30%; 
+  }
+  #yourmessage{
+    width: 50%; 
+  }
+}
+
+@media screen and (max-width:430px){
+  #fullname {
+    width: 50%; 
+  }
+  #emailaddress{
+    width: 50%; 
+  }
+  #yourmessage{
+    width: 80%; 
+  }
+
+}
