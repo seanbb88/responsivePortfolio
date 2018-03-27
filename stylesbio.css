@@ -130,9 +130,9 @@ i {
 @media screen and (max-width: 768px){
 
 #pic {
-  height: 60%;
-  width: 25%; 
-  margin-top: 60px; 
+  height: 70%;
+  width: 30%; 
+  margin-top: 40px; 
 }
 
 #bio {
@@ -155,8 +155,8 @@ i {
 @media screen and (max-width: 640px){
 
   #pic {
-    height: 45%;
-    width: 20%;
+    height: 55%;
+    width: 25%;
   }
 
   h1 {
