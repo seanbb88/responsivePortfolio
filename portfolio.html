@@ -26,6 +26,8 @@
           <img id="program" src="rtj.png">RTJ Game</button>
         <button class="button4" id="button" href="https://seanbb88.github.io/HomeworkAssignment6/">
           <img id="program" src="pic1.jpg">GIF Generator </button>
+        <button class="button5" id="button" href="https://seanbb88.github.io/HomeworkAssignment7/">
+          <img id="program" src="pic7.jpg">Train Scheduler </button>
 
       </div>
       <div class="programs-display2">
@@ -80,6 +82,15 @@
       })
 
       $(".button4").mouseleave(function () {
+        $('.display-pic4').hide();
+      })
+
+        //button 5 display on mouseover
+        $(".button5").mouseenter(function () {
+        $('.display-pic4').show();
+      })
+
+      $(".button5").mouseleave(function () {
         $('.display-pic4').hide();
       })
 
