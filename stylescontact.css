@@ -1,20 +1,52 @@
-.container {
-    flex-direction: column; 
-    display: flex; 
-    
-}
-
 body {
-  background-image: url("../Responsive-Portfolio/dust_scratches.png");
+  background-image: url(space.jpg); 
+  background-size: 100%; 
   
 }
+/* Main Container */
+.container {
+  height: 420px;
+  width: 70%; 
+  background-image: url("../Responsive-Portfolio/dust_scratches.png");
+  background-size: 100%; 
+  margin: auto; 
+  border-radius: 25px; 
 
+}
 
-h1 {
-  font-family: cursive; 
-  font-size: 30px; 
+div.container{
+  margin-top: 70px; 
+}
+
+/* Header 8*/
+.title {
   text-align: center; 
-  color: dimgray; 
+  font-size: 45px; 
+  width: 100%;
+  background:dimgray; 
+  margin-bottom: 20px; 
+  margin: auto; 
+  border-top-left-radius: 25px; 
+  border-top-right-radius: 25px; 
+}
+
+/* Form Container */
+
+.programs-container {
+  display: flex; 
+  flex-direction: row;
+  flex-direction: space-between; 
+  width: 100%; 
+  height: 321px;
+}
+
+/*Form functions */
+
+.form{
+  width: 100%; 
+  height: 250px;
+  margin-top: 40px; 
+  margin-left: 5px; 
 }
 
 #fullname {
@@ -32,12 +64,10 @@ h1 {
 
 }
 
-#fullname {
-  height: 15px;
-}
-
-#emailaddress {
-  height: 15px;
+/*Footer */
+.footer {
+  text-align: center; 
+  font-size: 10px; 
 }
 
 @media screen and (max-width: 640px){

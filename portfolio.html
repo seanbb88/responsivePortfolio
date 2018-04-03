@@ -5,71 +5,87 @@
   <title> Portfolio </title>
   <link rel="stylesheet" type="text/css" href="../Responsive-Portfolio/stylesportfolio.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-  <h1 class="title"> Portfolio </h1>
+
   <div class="container">
+    <h1 class="title"> Portfolio </h1>
     <div class="programs-container">
+      <div class="programs-display">
 
-      <div class="program">
-        <a href="https://seanbb88.github.io/HomeworkAssignment6/"> GIF Generator
-          <img id="program" src="pic1.jpg">
+
+
+        <button class="button1" id="button" href="https://seanbb88.github.io/HomeworkAssignment6/">
+          <img id="program" src="gif.gif">GIF Generator </button>
+        <button class="button2" id="button" href="https://seanbb88.github.io/HomeworkAssignmentFive/">
+          <img id="program" src="jimjim.png">Jim Carrey Trivia </button>
+        <button class="button3" id="button" href="https://seanbb88.github.io/HomeworkAssignmentFour/">
+          <img id="program" src="rtj.png">RTJ Game</button>
+        <button class="button4" id="button" href="https://seanbb88.github.io/HomeworkAssignment6/">
+          <img id="program" src="pic1.jpg">GIF Generator </button>
+
       </div>
-      </a>
-
-      <div class="program">
-        <a href="https://seanbb88.github.io/HomeworkAssignmentFive/"> Jim Carrey Trivia
-          <img id="program" src="pic2.jpg">
+      <div class="programs-display2">
+        <img class="display-pic1" src="pic2.jpg" alt="">
+        <img class="display-pic2" src="pic8.jpg" alt="">
+        <img class="display-pic3" src="pic6.jpg" alt="">
+        <img class="display-pic4" src="pic5.jpg" alt="">
       </div>
-      </a>
-
-      <div class="program">
-        <a href="https://seanbb88.github.io/HomeworkAssignmentFour/">Find The Jewels Game
-          <img id="program" src="pic3.png">
-      </div>
-      </a>
-
-      <div class="program">
-        <a href="#">Program 4
-          <img id="program" src="pic4.jpg">
-      </div>
-      </a>
-
-      <div class="program">
-        <a href="#"> Program 5
-          <img id="program" src="pic5.jpg">
-      </div>
-      </a>
-
-      <div class="program">
-        <a href="#"> Program 6
-          <img id="program" src="pic6.jpg">
-      </div>
-      </a>
-
-      <div class="program">
-        <a href="#">Program 7
-          <img id="program" src="pic7.jpg">
-      </div>
-      </a>
-
-      <div class="program">
-        <a href="#">Program 8
-          <img id="program" src="pic8.jpg">
-      </div>
-      </a>
-
     </div>
-    <div class="programs-display">
-      
-    </div>
-
+    <p class="footer">Copyright 2018 Sean Brown</p>
   </div>
 
-  <p class="footer">Copyright 2018 Sean Brown</p>
+  </div>
+  <script>
+    //website display hidden on start up
+    $(document).ready(function () {
+      $('.display-pic1').hide();
+      $('.display-pic2').hide();
+      $('.display-pic3').hide();
+      $('.display-pic4').hide();
 
+      //button 1 display on mouseover
+      $(".button1").mouseenter(function () {
+        $('.display-pic1').show();
+      })
+
+      $(".button1").mouseleave(function () {
+        $('.display-pic1').hide();
+      })
+
+      //button 2 display on mouseover
+      $(".button2").mouseenter(function () {
+        $('.display-pic2').show();
+      })
+
+      $(".button2").mouseleave(function () {
+        $('.display-pic2').hide();
+      })
+
+      //button 3 display on mouseover
+      $(".button3").mouseenter(function () {
+        $('.display-pic3').show();
+      })
+
+      $(".button3").mouseleave(function () {
+        $('.display-pic3').hide();
+      })
+
+      //button 4 display on mouseover
+      $(".button4").mouseenter(function () {
+        $('.display-pic4').show();
+      })
+
+      $(".button4").mouseleave(function () {
+        $('.display-pic4').hide();
+      })
+
+    })
+
+  </script>
 
 </body>
 
